@@ -27,7 +27,6 @@ interface MeetingModalProps {
 }
 
 const MeetingModal = ({isOpen, onClose, title, className, children, handleClick, buttonText , image, buttonIcon}: MeetingModalProps) => {
-    {console.log(isOpen)}
     return (
     <Dialog open={isOpen} onOpenChange={onClose}>
         <DialogTrigger>Open</DialogTrigger>
