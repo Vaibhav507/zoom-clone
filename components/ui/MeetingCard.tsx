@@ -66,7 +66,7 @@ const MeetingCard = ({
                             alt="feature"
                             width={20}
                             height={20}
-                        />
+                        /> &nbsp; Copy Link
                     </Button>
                 </div>
             )}
