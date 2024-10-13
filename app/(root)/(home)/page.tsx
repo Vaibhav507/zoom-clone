@@ -2,8 +2,8 @@ import MeetingTypeList from '@/components/ui/MeetingTypeList';
 import React from 'react'
 
 const Home = () => {
-  let currDate = new Date().toLocaleDateString("en-US", {weekday:'long', month: 'long',year: 'numeric', day: 'numeric'});
-  let currTime = new Date().toLocaleTimeString("en-US", {hour:'2-digit', minute: '2-digit'});
+  const currDate = new Date().toLocaleDateString("en-US", {weekday:'long', month: 'long',year: 'numeric', day: 'numeric'});
+  const currTime = new Date().toLocaleTimeString("en-US", {hour:'2-digit', minute: '2-digit'});
   return (
     <section className="flex size-full flex-col gap-10 text-white">
         <div className='h-[300px] w-full rounded-[20px] bg-hero bg-cover'>

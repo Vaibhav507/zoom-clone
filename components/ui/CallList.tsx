@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import MeetingCard from './MeetingCard';
 import Loader from './Loader';
-import { toast, useToast } from '@/hooks/use-toast';
+import { useToast } from '@/hooks/use-toast';
 
 const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
 
@@ -59,7 +59,8 @@ const CallList = ({ type }: { type: 'ended' | 'upcoming' | 'recordings' }) => {
                 setRecordings(recordings);
 
             } catch (error) {
-                toast( { title: 'Try again later'} )
+                toast( { title: 'Try again later' } );
+                console.log(error);
             }
         }
 
